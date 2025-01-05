@@ -17,7 +17,7 @@
 	in {
 		nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 			inherit system;
-			modules = [ ./configuration.nix ];
+			modules = [ ./hosts/pro/configuration.nix ];
 		};
 
 		homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
