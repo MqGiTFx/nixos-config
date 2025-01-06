@@ -65,15 +65,18 @@
   #   vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
   neovim
+  git
   home-manager
+  wl-clipboard
   ];
-  
-  programs.hyprland = {
-  	enable = true;
-  };
 
   nix.settings.experimental-features  = [ "nix-command" "flakes" ];
   nix.settings.trusted-users = ["root" "meowta"];
+
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true;
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
