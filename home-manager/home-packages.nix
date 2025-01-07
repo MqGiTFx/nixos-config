@@ -14,7 +14,6 @@
 		zoom-us
 
 		# Coding stuff
-#python
         gcc
 
 		# CLI utils
@@ -29,7 +28,8 @@
 
 		# WM and stuff
 		hyprland
-        hyprpaper
+        swaybg # +++
+        wpaperd # ???
 		waybar
 
 		# Sound

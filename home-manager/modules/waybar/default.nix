@@ -19,9 +19,9 @@
                     "pulseaudio"
                 ];
                 "modules-right" = [
+                    "custom/my_button"
                 ];
 
-                # Modules conf
                 "hyprland/workspaces" = {
                     disable-scroll = true;
                     all-outputs = true;
@@ -65,6 +65,13 @@
                     "format" = "{:%H:%M:%S}";
                     "format-alt" = "{:%d.%m.%Y}";
                     "interval" = 5;
+                };
+
+                "custom/my_button" = {
+                    "exec" = "bash /nixcfg/bin/define_wallpaper.sh";
+                    "format" = "{}";
+                    "on-click" = "bash /nixcfg/bin/change_wallpaper.sh";
+                    "interval" = 1;
                 };
             };
         };
