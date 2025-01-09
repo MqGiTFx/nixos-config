@@ -7,13 +7,15 @@
 		alacritty
 		xfce.thunar
 		telegram-desktop
+        cassette
 		mpv
 		imv
-		wofi
 		gparted
+        gimp
 		zoom-us
 
 		# Coding stuff
+        python313
         gcc
 
 		# CLI utils
@@ -24,13 +26,12 @@
 		zip
 		unzip
 		ffmpeg
-		brightnessctl
 
 		# WM and stuff
 		hyprland
-        swaybg # +++
-        wpaperd # ???
+        wpaperd
 		waybar
+		wofi
 
 		# Sound
 		pulseaudio
