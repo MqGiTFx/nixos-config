@@ -2,8 +2,12 @@
     nixpkgs.config.allowUnfree = true;
 
 	home.packages = with pkgs; [
-		# Desktop apps
-		firefox
+
+        alsa-utils
+
+        # Desktop apps
+        firefox
+        onlyoffice-desktopeditors
 		alacritty
 		xfce.thunar
 		telegram-desktop
@@ -13,6 +17,8 @@
 		gparted
         gimp
 		zoom-us
+        skypeforlinux
+        nwg-look
 
 		# Coding stuff
         python313
@@ -26,6 +32,7 @@
 		zip
 		unzip
 		ffmpeg
+        glib
 
 		# WM and stuff
 		hyprland

@@ -4,5 +4,6 @@
         ./wpaperd.nix
         ./hyprland
         ./waybar
+        ./fish
     ];
 }

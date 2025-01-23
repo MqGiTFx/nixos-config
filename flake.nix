@@ -8,7 +8,7 @@
 			url = "github:nix-community/home-manager/release-24.11";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
-
+        stylix.url = "github:danth/stylix";
 	};
 	outputs = { nixpkgs, home-manager, ... }:
 	let

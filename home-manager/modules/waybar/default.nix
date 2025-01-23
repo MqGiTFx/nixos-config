@@ -57,7 +57,7 @@
                         "headphone" = "";
                         "default" = [" " " " " "];
                     };
-                    "on-click" = "~/bin/toggle_mute";
+                    "on-click" = "bash /nixcfg/bin/toggle_mute.sh";
                 };
 
                 "clock" = {
