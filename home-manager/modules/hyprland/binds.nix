@@ -1,6 +1,9 @@
 {
     wayland.windowManager.hyprland.settings = {
         bind = [
+            "$altMod, w, exec, bash /nixcfg/bin/change_wallpaper.sh"
+            "$altMod, b, exec, pkill waybar || waybar"
+
             "$mainMod, RETURN, exec, $terminal"
             "$mainMod+SHIFT, F, exec, $browser"
             "$mainMod, Q, killactive,"

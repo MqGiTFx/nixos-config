@@ -3,8 +3,6 @@
 
 	home.packages = with pkgs; [
 
-        alsa-utils
-
         # Desktop apps
         firefox
         onlyoffice-desktopeditors
@@ -22,6 +20,7 @@
 
 		# Coding stuff
         python313
+        pyright
         gcc
 
 		# CLI utils
@@ -36,12 +35,14 @@
 
 		# WM and stuff
 		hyprland
-        wpaperd
 		waybar
+        hyprshot
+        swww
 		wofi
 
 		# Sound
 		pulseaudio
+        alsa-utils
 
         # Fonts
         (nerdfonts.override {

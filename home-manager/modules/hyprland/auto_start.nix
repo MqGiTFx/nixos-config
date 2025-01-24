@@ -2,7 +2,8 @@
     wayland.windowManager.hyprland.settings = {
         exec-once = [
             "waybar"
-            "wpaperd"
+            "swww init"
+            "bash /nixcfg/bin/change_wallpaper.sh"
         ];
     };
 }

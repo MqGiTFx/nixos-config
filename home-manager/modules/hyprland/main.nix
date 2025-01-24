@@ -9,6 +9,7 @@
             "$browser" = "firefox";
             "$menu" = "wofi --show drun";
             "$mainMod" = "SUPER";
+            "$altMod" = "alt";
         };
     };
 }
