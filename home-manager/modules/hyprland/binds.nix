@@ -6,11 +6,11 @@
 
             "$mainMod, RETURN, exec, $terminal"
             "$mainMod+SHIFT, F, exec, $browser"
+            "$mainMod+SHIFT, T, exec, $fileManager"
+            "$mainMod, R, exec, $menu"
             "$mainMod, Q, killactive,"
             "$mainMod+ALT, Q, exit,"
-            "$mainMod+SHIFT, T, exec, $fileManager"
             "$mainMod, E, togglefloating,"
-            "$mainMod, R, exec, $menu"
             "$mainMod, P, pseudo,"
             "$mainMod, J, togglesplit,"
             ", PRINT, exec, hyprshot -m region"

@@ -7,9 +7,9 @@
             "$terminal" = "alacritty";
             "$fileManager" = "thunar";
             "$browser" = "firefox";
-            "$menu" = "wofi --show drun";
+            "$menu" = "rofi -show drun -theme launcher.rasi";
             "$mainMod" = "SUPER";
             "$altMod" = "alt";
-        };
+       };
     };
 }

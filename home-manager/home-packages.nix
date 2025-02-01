@@ -38,7 +38,7 @@
 		waybar
         hyprshot
         swww
-		wofi
+        rofi
 
 		# Sound
 		pulseaudio
