@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Укажите директорию
-DIRECTORY="/nixcfg/users/$USER/wallpapers"
+DIRECTORY="/nixos-config/users/$USER/wallpapers"
 
 # Выбор случайного файла
 RANDOM_FILE=$(ls "$DIRECTORY" | shuf -n 1)

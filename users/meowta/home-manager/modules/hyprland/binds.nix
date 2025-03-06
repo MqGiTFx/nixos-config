@@ -1,7 +1,7 @@
 {
     wayland.windowManager.hyprland.settings = {
         bind = [
-            "$altMod, w, exec, bash /nixcfg/users/\${USER}/bin/change_wallpaper.sh"
+            "$altMod, w, exec, bash /nixos-config/users/\${USER}/bin/change_wallpaper.sh"
             "$altMod, b, exec, pkill waybar || waybar"
 
             "$mainMod, RETURN, exec, $terminal"
@@ -40,8 +40,6 @@
             "$mainMod SHIFT, 0, movetoworkspace, 10"
             "$mainMod, S, togglespecialworkspace, magic"
             "$mainMod SHIFT, S, movetoworkspace, special:magic"
-            "$mainMod, mouse_down, workspace, e+1"
-            "$mainMod, mouse_up, workspace, e-1"
                 ];
         bindm = [
             "$mainMod, mouse:272, movewindow"

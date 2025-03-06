@@ -5,5 +5,7 @@
         ./waybar
         ./fish
         ./gtk
+        ./nvim
+        ./rofi
     ];
 }

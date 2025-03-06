@@ -32,7 +32,7 @@
       value = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         modules = [ ./users/${user}/home-manager/home.nix ];
-        extraSpecialArgs = { inherit inputs; };
+        extraSpecialArgs = { inherit inputs user; };
       };
     }) users);
   };

@@ -1,22 +1,22 @@
-{
-    home.file.".themes/VALYRIAN-Total-Steel".source = ../../../GTK/themes/VALYRIAN-Total-Steel;
-    home.file.".icons/Tokyonight-Moon".source = ../../../GTK/icons/Tokyonight-Moon;
-
+{ pkgs, ... }: {
     gtk = {
         enable = true;
-        theme = {
-            name = "VALYRIAN-Total-Steel";
-            package = null;
-        };
         iconTheme = {
-            name = "Tokyonight-Moon";
-            package = null;
+            package = pkgs.catppuccin-papirus-folders.override {
+                flavor = "mocha";
+                accent = "lavender";
+            };
+            name = "Papirus-Dark";
         };
-        gtk3.extraConfig = {
-            gtk-application-prefer-dark-theme = 1;
+        theme = {
+            name = "catppuccin-mocha-lavender-compact";
+            package = pkgs.catppuccin-gtk.override {
+                accents =  [ "lavender" ];
+                variant = "mocha";
+                size = "compact";
+            };
         };
-        gtk4.extraConfig = {
-            gtk-application-prefer-dark-theme = 1;
-        };
-    };
+        gtk3.extraConfig.gtk-application-prefer-dark-theme = true;
+        gtk4.extraConfig.gtk-application-prefer-dark-theme = true;
+};
 }

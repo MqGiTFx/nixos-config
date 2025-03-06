@@ -2,6 +2,7 @@
     nixpkgs.config.allowUnfree = true;
 
 	home.packages = with pkgs; [
+
         # Desktop apps
         firefox
         onlyoffice-desktopeditors
@@ -18,7 +19,7 @@
         xfce.thunar
 
 		# Coding stuff
-        python313
+        python313Full
         pyright
         gcc
 
@@ -32,6 +33,8 @@
 		ffmpeg
         glib
         inxi
+
+        wine
 
 		# WM and stuff
 		hyprland

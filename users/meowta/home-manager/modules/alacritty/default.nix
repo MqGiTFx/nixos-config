@@ -25,30 +25,70 @@
         };
       };
       colors = {
-        bright = {
-          black = "#444b6a";
-          blue = "#7da6ff";
-          cyan = "#0db9d7";
-          green = "#7da6ff";
-          magenta = "#bb9af7";
-          red = "#ff7a93";
-          white = "#acb0d0";
-          yellow = "#ff9e64";
+        primary = {
+          background = "#1e1e2e";
+          foreground = "#cdd6f4";
+        };
+        cursor = {
+          text = "#1e1e2e";
+          cursor = "#f5e0dc";
+        };
+        vi_mode_cursor = {
+          text = "#1e1e2e";
+          cursor = "#b4befe";
+        };
+        search = {
+          matches = {
+            foreground = "#1e1e2e";
+            background = "#a6adc8";
+          };
+          focused_match = {
+            foreground = "#1e1e2e";
+            background = "#a6e3a1";
+          };
+        };
+        footer_bar = {
+          foreground = "#1e1e2e";
+          background = "#a6adc8";
+        };
+        hints = {
+          start = {
+            foreground = "#1e1e2e";
+            background = "#f9e2af";
+          };
+          end = {
+            foreground = "#1e1e2e";
+            background = "#a6adc8";
+          };
+        };
+        selection = {
+          text = "#1e1e2e";
+          background = "#f5e0dc";
         };
         normal = {
-          black = "#32344a";
-          blue = "#7aa2f7";
-          cyan = "#449dab";
-          green = "#7da6ff";
-          magenta = "#ad8ee6";
-          red = "#f7768e";
-          white = "#787c99";
-          yellow = "#e0af68";
+          black = "#45475a";
+          red = "#f38ba8";
+          green = "#a6e3a1";
+          yellow = "#f9e2af";
+          blue = "#89b4fa";
+          magenta = "#f5c2e7";
+          cyan = "#94e2d5";
+          white = "#bac2de";
         };
-        primary = {
-          background = "#0b1924";
-          foreground = "#B7C9D9";
+        bright = {
+          black = "#585b70";
+          red = "#f38ba8";
+          green = "#a6e3a1";
+          yellow = "#f9e2af";
+          blue = "#89b4fa";
+          magenta = "#f5c2e7";
+          cyan = "#94e2d5";
+          white = "#a6adc8";
         };
+        indexed_colors = [
+          { index = 16; color = "#fab387"; }
+          { index = 17; color = "#f5e0dc"; }
+        ];
       };
     };
   };
