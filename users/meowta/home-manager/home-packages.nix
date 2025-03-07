@@ -3,6 +3,8 @@
 
 	home.packages = with pkgs; [
 
+        cava
+
         # Desktop apps
         firefox
         onlyoffice-desktopeditors
@@ -45,6 +47,7 @@
 
 		# Sound
 		pulseaudio
+        pamixer
         alsa-utils
 
         # Fonts

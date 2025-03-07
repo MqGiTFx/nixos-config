@@ -68,7 +68,7 @@
         normal = {
           black = "#45475a";
           red = "#f38ba8";
-          green = "#a6e3a1";
+          green = "#cba6f7";
           yellow = "#f9e2af";
           blue = "#89b4fa";
           magenta = "#f5c2e7";
@@ -78,7 +78,7 @@
         bright = {
           black = "#585b70";
           red = "#f38ba8";
-          green = "#a6e3a1";
+          green = "#cba6f7";
           yellow = "#f9e2af";
           blue = "#89b4fa";
           magenta = "#f5c2e7";
