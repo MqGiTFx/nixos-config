@@ -1,9 +1,6 @@
 {
     wayland.windowManager.hyprland.settings = {
         bind = [
-            "$altMod, w, exec, bash /nixos-config/users/\${USER}/bin/change_wallpaper.sh"
-            "$altMod, b, exec, pkill waybar || waybar"
-
             "$mainMod, RETURN, exec, $terminal"
             "$mainMod+SHIFT, F, exec, $browser"
             "$mainMod+SHIFT, T, exec, $fileManager"
@@ -12,12 +9,11 @@
             "$mainMod+ALT, Q, exit,"
             "$mainMod, E, togglefloating,"
             "$mainMod, P, pseudo,"
-            "$mainMod, J, togglesplit,"
-            ", PRINT, exec, hyprshot -m region"
-            "$mainMod, left, movefocus, l"
-            "$mainMod, right, movefocus, r"
-            "$mainMod, up, movefocus, u"
-            "$mainMod, down, movefocus, d"
+            "$mainMod, X, togglesplit,"
+            "$mainMod, H, movefocus, l"
+            "$mainMod, L, movefocus, r"
+            "$mainMod, K, movefocus, u"
+            "$mainMod, J, movefocus, d"
             "$mainMod, 1, workspace, 1"
             "$mainMod, 2, workspace, 2"
             "$mainMod, 3, workspace, 3"
@@ -40,6 +36,10 @@
             "$mainMod SHIFT, 0, movetoworkspace, 10"
             "$mainMod, S, togglespecialworkspace, magic"
             "$mainMod SHIFT, S, movetoworkspace, special:magic"
+
+            "$altMod, w, exec, bash /nixos-config/users/\${USER}/bin/change_wallpaper.sh"
+            "$altMod, b, exec, pkill waybar || waybar"
+            ", PRINT, exec, hyprshot -m region"
                 ];
         bindm = [
             "$mainMod, mouse:272, movewindow"

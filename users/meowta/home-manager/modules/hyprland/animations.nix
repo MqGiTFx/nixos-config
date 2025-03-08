@@ -3,29 +3,27 @@
         animations = {
             enabled = true;
             bezier = [
-                "easeOutQuint,0.23,1,0.32,1"
-                    "easeInOutCubic,0.65,0.05,0.36,1"
-                    "linear,0,0,1,1"
-                    "almostLinear,0.5,0.5,0.75,1.0"
-                    "quick,0.15,0,0.1,1"
+                "almostLinear, 0.5, 0.5, 0.75, 1.0"
+                "shape, 1, 0.71, 0.06, 0.96"
+                "linear, 1, 1, 0, 0"
             ];
             animation = [
                 "global, 1, 10, default"
-                    "border, 1, 5.39, easeOutQuint"
-                    "windows, 1, 4.79, easeOutQuint"
-                    "windowsIn, 1, 4.1, easeOutQuint, popin 87%"
-                    "windowsOut, 1, 1.49, linear, popin 87%"
-                    "fadeIn, 1, 1.73, almostLinear"
-                    "fadeOut, 1, 1.46, almostLinear"
-                    "fade, 1, 3.03, quick"
-                    "layers, 1, 3.81, easeOutQuint"
-                    "layersIn, 1, 4, easeOutQuint, fade"
-                    "layersOut, 1, 1.5, linear, fade"
-                    "fadeLayersIn, 1, 1.79, almostLinear"
-                    "fadeLayersOut, 1, 1.39, almostLinear"
-                    "workspaces, 1, 1.94, almostLinear, fade"
-                    "workspacesIn, 1, 1.21, almostLinear, fade"
-                    "workspacesOut, 1, 1.94, almostLinear, fade"
+                "border, 1, 7.5, linear"
+                "windows, 1, 5, shape"
+                "windowsIn, 1, 3, shape"
+                "windowsOut, 1, 5, linear"
+                "fade, 1, 3.03, shape"
+                "fadeIn, 1, 1.73, almostLinear"
+                "fadeOut, 1, 1.46, almostLinear"
+                "fadeLayersIn, 1, 0.1, linear"
+                "fadeLayersOut, 1, 0.1, linear"
+                "layers, 1, 2.25, shape, slide"
+                "layersIn, 1, 2.25, shape, popin 25%"
+                "layersOut, 1, 1.5, shape, popin 25%"
+                "workspaces, 1, 5, linear, slide"
+                "workspacesIn, 1, 2.5, linear, slidevert"
+                "workspacesOut, 1, 2.5, linear, slidevert"
             ];
         };
     };
