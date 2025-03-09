@@ -35,15 +35,6 @@ augroup end
 vim.opt.number = true
 
 
--- Indent Settings
-vim.opt.expandtab = true               -- Превратить все tab в пробелы
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.smartindent = true             -- Копировать отступ на новой строке
-vim.opt.cindent = true                 -- Автоотступы
-vim.opt.smarttab = true                -- Tab перед строкой вставит shiftwidht количество табов
-
 -- Fillchars
 vim.opt.fillchars = {
     vert = "│",
@@ -55,6 +46,32 @@ vim.opt.fillchars = {
     foldsep = "│",
     foldclose = "▸"
 }
+
+-- Basic settings
+vim.opt.expandtab = true
+vim.opt.smartindent = true
+vim.opt.cindent = true
+vim.opt.smarttab = true
+
+-- Python
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "python",
+    callback = function()
+        vim.opt.shiftwidth = 4
+        vim.opt.tabstop = 4
+        vim.opt.softtabstop = 4
+    end,
+})
+
+-- Nix, Json, Lua
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "nix", "json", "lua" },
+    callback = function()
+        vim.opt.shiftwidth = 2
+        vim.opt.tabstop = 2
+        vim.opt.softtabstop = 2
+    end,
+})
 
 -- Commands
 vim.cmd([[
