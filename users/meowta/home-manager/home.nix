@@ -1,8 +1,8 @@
-{ config, pkgs, user, ... }: {
+{ user, homeStateVersion, ... }: {
     home = {
         username = user;
         homeDirectory = "/home/${user}";
-        stateVersion = "24.11";
+        stateVersion = homeStateVersion;
     };
 
     imports = [

@@ -8,22 +8,25 @@
       url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    stylix.url = "github:danth/stylix";
   };
 
   outputs = { nixpkgs, home-manager, ... } @ inputs:
   let
     system = "x86_64-linux";
-    users = [ "meowta" ];
-    hosts = [ "pro" ];
+    homeStateVersion = "24.11";
+    users = [
+        "meowta"
+    ];
+    hosts = [
+        { hostname = "pro"; stateVersion  = "24.11"; }
+    ];
   in {
     nixosConfigurations = builtins.listToAttrs (map (host: {
-      name = host;
+      name = host.hostname;
       value = nixpkgs.lib.nixosSystem {
         inherit system;
-        modules = [ ./hosts/${host}/configuration.nix ];
-        specialArgs = { inherit inputs; };
+        modules = [ ./hosts/${host.hostname}/configuration.nix ];
+        specialArgs = { inherit inputs; stateVersion = host.stateVersion; };
       };
     }) hosts);
 
@@ -32,7 +35,7 @@
       value = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         modules = [ ./users/${user}/home-manager/home.nix ];
-        extraSpecialArgs = { inherit inputs user; };
+        extraSpecialArgs = { inherit inputs user homeStateVersion; };
       };
     }) users);
   };

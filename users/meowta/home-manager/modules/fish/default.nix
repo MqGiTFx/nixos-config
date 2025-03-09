@@ -1,4 +1,8 @@
-{
+{ pkgs, ... }: {
+    home.sessionVariables = {
+        SHELL = "${pkgs.fish}/bin/fish";
+    };
+
     programs.fish = {
         enable = true;
 
