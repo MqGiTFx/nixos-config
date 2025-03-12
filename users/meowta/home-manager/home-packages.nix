@@ -1,62 +1,63 @@
 { pkgs, ... }: {
-    nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnfree = true;
 
-	home.packages = with pkgs; [
+  home.packages = with pkgs; [
 
-        cava
+    # Desktop apps
+    firefox
+    onlyoffice-desktopeditors
+    alacritty
+    telegram-desktop
+    cassette
+    mpv
+    imv
+    gimp
+    zoom-us
+    nwg-look
+    obsidian
+    xfce.thunar
 
-        # Desktop apps
-        firefox
-        onlyoffice-desktopeditors
-		alacritty
-		telegram-desktop
-        cassette
-		mpv
-		imv
-		gparted
-        gimp
-		zoom-us
-        nwg-look
-        obsidian
-        xfce.thunar
+    # Coding stuff
+    python313Full
+    pyright
+    ruff
+    uv
 
-		# Coding stuff
-        python313Full
-        pyright
-        gcc
+    gcc
 
-		# CLI utils
-		fish
-		git
-		htop
-		neofetch
-		zip
-		unzip
-		ffmpeg
-        glib
-        inxi
+    # CLI utils
+    fish
+    git
+    htop
+    fastfetch
+    zip
+    unzip
+    ffmpeg
+    cava
+    glib
+    inxi
+    wine
 
-        wine
+    # WM and stuff
+    hyprland
+    waybar
+    hyprshot
+    swww
+    dunst
+    rofi
 
-		# WM and stuff
-		hyprland
-		waybar
-        hyprshot
-        swww
-        rofi
+    # Sound
+    pulseaudio
+    pamixer
+    alsa-utils
 
-		# Sound
-		pulseaudio
-        pamixer
-        alsa-utils
-
-        # Fonts
-        (nerdfonts.override {
-            fonts = [
-                "NerdFontsSymbolsOnly"
-                "JetBrainsMono"
-            ];
-        })
-	];
-    fonts.fontconfig.enable = true;
+    # Fonts
+    (nerdfonts.override {
+     fonts = [
+     "NerdFontsSymbolsOnly"
+     "JetBrainsMono"
+     ];
+     })
+  ];
+  fonts.fontconfig.enable = true;
 }

@@ -7,5 +7,6 @@
         ./gtk
         ./nvim
         ./rofi
+        ./fastfetch
     ];
 }

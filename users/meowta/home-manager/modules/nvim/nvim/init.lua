@@ -1,10 +1,9 @@
 
-------------------------
--- Импорт модулей Lua --
-------------------------
+-----------------------
+-- Importing modules --
+-----------------------
 
 -- Base
-
 require('core.plugins')
 require('core.mappings')
 require('core.config')
