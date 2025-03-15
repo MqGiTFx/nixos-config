@@ -1,4 +1,8 @@
-
-print('AVE REVIVUS!!!!')
-require('mini.move').setup()
+return {
+  'echasnovski/mini.move',
+  version = false,
+  config = function()
+    require('mini.move').setup()
+  end
+}
 

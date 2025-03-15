@@ -16,75 +16,33 @@ vim.opt.runtimepath:prepend("~/.config/nvim/lua/lazy.nvim")
 
 require('lazy').setup({
 
-  -- Color sheme
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  require("plugins.colorize"), -- Colorize
+  require("plugins.colortheme"), -- Color sheme
+  require("plugins.illuminate"), -- illuminate
+  require("plugins.bufferline"), -- bufferline
+  require("plugins.terminal"), -- Terminal
+  require("plugins.treesitter"), -- Treesitter
+  require("plugins.autopairs"), -- Auto Pairs
+  
+  require("plugins.neotree"), -- File tree
+  require("plugins.lualine"), -- Lua airline
 
-  -- Colorize
-  { 'norcalli/nvim-colorizer.lua' },
-
-  -- illuminate
-  { 'RRethy/vim-illuminate' },
-
-  -- bufferline
-  {'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons'},
-
-  -- Terminal
-  {'akinsho/toggleterm.nvim', version = "*", config = true},
-
-  -- Tresitter
-  {'nvim-treesitter/nvim-treesitter'},
-
-  -- Auto Pairs
-  {'windwp/nvim-autopairs'},
+  require("plugins.telescope"), -- Telescope
+  require("plugins.mini"), -- Mini
+  require("plugins.lsp"),
+  require("plugins.cmp"),
+  require("plugins.startmenu")
 
   -- LSP
-  { 'neovim/nvim-lspconfig' },
-  { 'hrsh7th/cmp-nvim-lsp' },
-  { 'hrsh7th/cmp-buffer' },
-  { 'hrsh7th/cmp-path' },
-  { 'hrsh7th/cmp-cmdline' },
-  { 'hrsh7th/nvim-cmp' },
-  {'onsails/lspkind-nvim'},
+ --{ 'neovim/nvim-lspconfig' },
+ --{ 'hrsh7th/cmp-nvim-lsp' },
+ --{ 'hrsh7th/cmp-buffer' },
+ --{ 'hrsh7th/cmp-path' },
+ --{ 'hrsh7th/cmp-cmdline' },
+ --{ 'hrsh7th/nvim-cmp' },
+ --{ 'onsails/lspkind-nvim' },
 
   -- For vsnip users
-  { 'hrsh7th/cmp-vsnip' },
-  { 'hrsh7th/vim-vsnip' },
-
-  -- Uncomment for luasnip users
-  -- { 'L3MON4D3/LuaSnip' },
-  -- { 'saadparwaiz1/cmp_luasnip' },
-
-  -- Uncomment for ultisnips users
-  -- { 'SirVer/ultisnips' },
-  -- { 'quangnguyen30192/cmp-nvim-ultisnips' },
-
-  -- Uncomment for snippy users
-  -- { 'dcampos/nvim-snippy' },
-  -- { 'dcampos/cmp-snippy' },
-
-  { -- Lua airline
-    'nvim-lualine/lualine.nvim',
-    opts = {},
-    dependencies = {
-      'kyazdani42/nvim-web-devicons' -- Icons
-    }
-  },
-  {
-    'nvim-telescope/telescope.nvim', tag = '0.1.8',
-    dependencies = { 'nvim-lua/plenary.nvim' }
-  },
-
-  -- File tree
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    branch = "v2.x",
-    dependencies = {
-      "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons",
-      "MunifTanjim/nui.nvim", "s1n7ax/nvim-window-picker",
-    },
-  },
-
-  -- Mini
-  { 'echasnovski/mini.move', version = false },
+ --{ 'hrsh7th/cmp-vsnip' },
+ --{ 'hrsh7th/vim-vsnip' },
 })
-

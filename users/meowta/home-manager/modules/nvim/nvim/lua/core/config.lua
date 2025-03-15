@@ -14,6 +14,7 @@ vim.opt.encoding = 'utf-8'
 vim.opt.shell = "fish"
 vim.opt.fileformat = "unix"
 vim.opt.guifont = "JetBrainsMono"
+vim.opt.scrolloff = 8
 
 -- Mouse
 vim.opt.mouse = "a"
@@ -74,6 +75,4 @@ augroup end
 vim.cmd([[
 filetype indent plugin on
 syntax enable
-colorscheme catppuccin-mocha
 ]])
-

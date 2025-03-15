@@ -5,17 +5,18 @@
 
     # Desktop apps
     firefox
-    onlyoffice-desktopeditors
     alacritty
+    xfce.thunar
+    onlyoffice-desktopeditors
+    libsForQt5.kdenlive
     telegram-desktop
     cassette
-    mpv
-    imv
     gimp
     zoom-us
     nwg-look
     obsidian
-    xfce.thunar
+    imv
+    mpv
 
     # Coding stuff
     python313Full
@@ -28,7 +29,8 @@
     # CLI utils
     fish
     git
-    htop
+    tree
+    btop
     fastfetch
     zip
     unzip
