@@ -1,12 +1,12 @@
 {
-    imports = [
-        ./alacritty
-        ./hyprland
-        ./waybar
-        ./fish
-        ./gtk
-        ./nvim
-        ./rofi
-        ./fastfetch
-    ];
+  imports = [
+    ./wezterm
+    ./hyprland
+    ./waybar
+    ./fish
+    ./gtk
+    ./nvim
+    ./rofi
+    ./fastfetch
+  ];
 }

@@ -31,7 +31,8 @@ require('lazy').setup({
   require("plugins.mini"), -- Mini
   require("plugins.lsp"),
   require("plugins.cmp"),
-  require("plugins.startmenu")
+  require("plugins.startmenu"),
+  require("plugins.mason")
 
   -- LSP
  --{ 'neovim/nvim-lspconfig' },

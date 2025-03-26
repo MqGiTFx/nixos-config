@@ -81,10 +81,65 @@ return {
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
-    -- Configure pyright
-    require('lspconfig').pyright.setup {
+
+    -- Configure servers
+    local lsp = require('lspconfig')
+
+    -- Python
+    lsp.pyright.setup {
       capabilities = capabilities,
       filetypes = { 'python' },
     }
+
+    -- Lua
+    lsp.lua_ls.setup {
+      capabilities = capabilities,
+      settings = {
+        Lua = {
+          runtime = { version = 'LuaJIT' },
+          diagnostics = { globals = { 'vim' } },
+          workspace = {
+            library = vim.api.nvim_get_runtime_file("", true),
+            checkThirdParty = false
+          },
+          telemetry = { enable = false }
+        }
+      }
+    }
+
+    -- Rust
+    lsp.rust_analyzer.setup {
+      capabilities = capabilities,
+      settings = {
+        ["rust-analyzer"] = {
+          cargo = { allFeatures = true },
+          checkOnSave = {
+            command = "clippy",
+            extraArgs = { "--no-deps" }
+          }
+        }
+      }
+    }
+
+    -- Nix
+    lsp.rnix.setup {
+      capabilities = capabilities,
+      filetypes = { "nix" },
+      -- Опционально: интеграция с nixpkgs-fmt для форматирования
+      on_attach = function(client, bufnr)
+        if client.name == "rnix" then
+          vim.api.nvim_create_autocmd("BufWritePre", {
+            buffer = bufnr,
+            callback = function()
+              vim.lsp.buf.format({
+                filter = function(c) return c.name == "rnix" end,
+                async = false
+              })
+            end
+          })
+        end
+      end
+    }
+
   end,
 }

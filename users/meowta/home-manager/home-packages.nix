@@ -5,8 +5,9 @@
 
     # Desktop apps
     firefox
-    alacritty
+    wezterm
     xfce.thunar
+    xfce.xfconf
     onlyoffice-desktopeditors
     libsForQt5.kdenlive
     telegram-desktop
@@ -19,10 +20,14 @@
     mpv
 
     # Coding stuff
+    docker
+
     python313Full
-    pyright
-    ruff
+    nodejs_23
     uv
+
+    rustc
+    cargo
 
     gcc
 
@@ -55,11 +60,11 @@
 
     # Fonts
     (nerdfonts.override {
-     fonts = [
-     "NerdFontsSymbolsOnly"
-     "JetBrainsMono"
-     ];
-     })
+      fonts = [
+        "NerdFontsSymbolsOnly"
+        "JetBrainsMono"
+      ];
+    })
   ];
   fonts.fontconfig.enable = true;
 }

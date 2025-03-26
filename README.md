@@ -17,7 +17,7 @@
  * OS: [**`NixOS`**](https://nixos.org/)
  * WM: [**`Hyprland`**](https://hyprland.org/)
  * Bar: [**`Waybar`**](https://github.com/Alexays/Waybar)
- * Terminal: [**`Alacritty`**](https://github.com/alacritty/alacritty)
+ * Terminal: [**`WezTerm`**](https://wezterm.org/)
  * Shell: [**`Fish`**](https://github.com/fish-shell/fish-shell)
  * Notify Daemon: [**`Dunst`**](https://github.com/dunst-project/dunst)
  * App Launcher: [**`Rofi`**](https://github.com/davatorium/rofi)

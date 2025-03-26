@@ -13,7 +13,8 @@ vim.opt.swapfile = false
 vim.opt.encoding = 'utf-8'
 vim.opt.shell = "fish"
 vim.opt.fileformat = "unix"
-vim.opt.guifont = "JetBrainsMono"
+vim.opt.guifont = "JetBrainsMono Nerd Font"
+vim.g.neovide_font_ligatures = true
 vim.opt.scrolloff = 8
 
 -- Mouse

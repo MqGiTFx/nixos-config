@@ -4,6 +4,7 @@
             "XCURSOR_SIZE,25"
             "HYPRCURSOR_SIZE,25"
             "TerminalEmulator,$terminal"
+            "EDITOR,nvim"
         ];
     };
 }

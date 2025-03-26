@@ -8,7 +8,5 @@ require('core.plugins')
 require('core.mappings')
 require('core.config')
 
--- Plugins
-
-print('AVE REVIVUS!!!!')
+--print('AVE REVIVUS!!!!')
 
