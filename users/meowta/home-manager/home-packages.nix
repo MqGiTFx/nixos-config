@@ -20,6 +20,8 @@
     mpv
 
     # Coding stuff
+    nix-prefetch-github
+
     docker
 
     python313Full
