@@ -25,55 +25,64 @@
 @define-color crust #11111b;
 
 * {
-    font-family: JetBrainsMono Nerd Font;
-    font-size: 15px;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 15px;
 }
 .module {
-    margin: 5px 5px;
+  margin: 5px 5px;
 }
 
 window#waybar {
-    background-color: transparent;
-    color: @text;
+  background-color: transparent;
+  color: @text;
+}
+
+#custom-rofi_launcher,
+#workspaces {
+  background-color: @surface0;
+  margin: 3px 0px;
+}
+
+#custom-rofi_launcher {
+  color: @lavender;
+  margin-left: 1rem;
+  border-radius: 0.5rem 0px 0px 0.5rem;
 }
 
 #workspaces {
-    border-radius: 1rem;
-    margin: 3px;
-    background-color: @surface0;
-    margin-left: 1rem;
+  border-radius: 0px 0.5rem 0.5rem 0px;
 }
 
 #workspaces button {
-    color: @lavender;
-    border-radius: 0.5rem;
-    padding: 0rem;
-    min-width: 1.75rem
+  color: @lavender;
+  border-radius: 0.5rem;
+  padding: 0rem;
+  min-width: 1.75rem
 }
 
 #workspaces button.empty {
-    color: @surface2;
+  color: @surface2;
 }
 
 #workspaces button:hover {
-    background: @crust;
+  background: @crust;
 }
 
 #workspaces button.active {
-    color: @sky;
-    background-color: @overlay0;
-    box-shadow: inset 0 -3px @lavender;
+  color: @sky;
+  background-color: @overlay0;
+  box-shadow: inset 0 -3px @lavender;
 }
 
 #workspaces button.urgent {
-    background-color: @red;
+  background-color: @red;
 }
 
 #pulseaudio,
 #clock,
 #language {
-    background-color: @surface0;
-    margin: 3px 0px;
+  background-color: @surface0;
+  margin: 3px 0px;
 }
 
 #pulseaudio {
@@ -90,33 +99,33 @@ window#waybar {
 }
 
 #clock {
-    color: @lavender;
+  color: @lavender;
 }
 
 #language {
-    color: @lavender;
-    border-radius: 0.5rem 0px 0px 0.5rem;
+  color: @lavender;
+  border-radius: 0.5rem 0px 0px 0.5rem;
 }
 
 #cpu,
 #disk,
 #memory{
-    background-color: @surface0;
-    margin: 3px 0px;
+  background-color: @surface0;
+  margin: 3px 0px;
 }
 
 #cpu {
-    color: @lavender;
-    border-radius: 0.5rem 0px 0px 0.5rem;
+  color: @lavender;
+  border-radius: 0.5rem 0px 0px 0.5rem;
 }
 
 #disk {
-    color: @lavender;
+  color: @lavender;
 }
 
 #memory {
-    color: @lavender;
-    border-radius: 0px 0.5rem 0.5rem 0px;
-    margin-right: 1rem;
+  color: @lavender;
+  border-radius: 0px 0.5rem 0.5rem 0px;
+  margin-right: 1rem;
 }
 
