@@ -1,11 +1,13 @@
 { config, pkgs, lib, ... }:
 
+# To learn the new sha256, you need nix-prefetch-github Dracovolodeus DracoNvim --rev HEAD
+
 let
   nvimRepo = pkgs.fetchFromGitHub {
     owner = "Dracovolodeus";
     repo = "DracoNvim";
-    rev = "cb61c25bb421769bcdf950e598d6f456e4d13414";
-    sha256 = "sha256-ITHReFmX/elO1i2MJuKuo/nHTUCQ7HZ6PPTRFDXLfVk=";
+    rev = "2cb25a393ec3c6c7ac6a76a803c56952c6d83862";
+    sha256 = "sha256-RbMpKin26yWMnVrQVs+ri9kFWVHitWsexrn2bGEToSY=";
   };
 in
 {
