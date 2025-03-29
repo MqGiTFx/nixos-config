@@ -8,6 +8,9 @@
       "$fileManager" = "thunar";
       "$browser" = "firefox";
       "$menu" = "rofi -show drun -theme launcher.rasi";
+      "$shell" = "fish";
+      "$editor" = "nvim";
+
       "$mainMod" = "SUPER";
       "$altMod" = "alt";
     };
