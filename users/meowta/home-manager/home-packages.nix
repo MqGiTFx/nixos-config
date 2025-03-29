@@ -20,6 +20,7 @@
     mpv
 
     # Coding stuff
+    openssl
     nix-prefetch-github
 
     docker
